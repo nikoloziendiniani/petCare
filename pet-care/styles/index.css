@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --mineText: "Roboto";
+    --mainBg: #46da5c;
+    --secBG: #106600;
+}
+
+/*start heath */
+section.health {
+    background-image: url("../asset/image/dog-and-owner.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 150px;
+    padding-left: 100px;
+    padding-right: 400px;
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+/* section.health .container {
+    background-color: white;
+    width: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    align-items: center;
+} */
+
+section.health .container {
+    background-color: white;
+    width: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    align-items: center;
+    animation: normal 3s gachena ease-in-out;
+    opacity: 0.8;
+}
+
+@keyframes gachena {
+    from {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+section.health .container .title,
+section.cure .container .texts .title,
+section.sitter .container .title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: var(--mineText);
+}
+
+section.health .container .text,
+section.cure .container .texts .text,
+section.sitter .container .text {
+    font-size: 1.1rem;
+    margin: 14px 0 10px;
+    text-align: justify;
+}
+
+section.health .container .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+section.health .container .links a .btn,
+section.health .container .links a .link {
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-family: var(--mineText);
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: 0.1s ease-in-out;
+    min-width: 140px;
+}
+
+section.health .container .links a .btn {
+    background-color: var(--mainBg);
+    color: black;
+}
+
+section.health .container .links a .btn:hover,
+section.health .container .links a .link:hover,
+section.health .container .links a .btn:active,
+section.health .container .links a .link:active 
+{
+    background-color: black;
+    color: var(--mainBg);
+}
+
+section.health .container .links a .link {
+    background-color: var(--secBG);
+    color: white;
+}
+
+/*end heath */
+/* start cure */
+
+section.cure {
+    display: flex;
+    justify-content: center;
+    padding: 30px 50px;
+}
+
+section.cure .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 5px;
+    gap: 40px;
+    background-color: rgba(47, 213, 255, 0.295);
+}
+
+section.cure .container .image>img {
+    width: 424px;
+    height: 440px;
+}
+
+section.cure .container .texts {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.cure .container .texts a {
+    align-self: flex-end;
+    color: rgb(255, 255, 255);
+    font-family: var(--mineText);
+    padding: 5px 10px;
+    background-color: rgb(127, 129, 255);
+    border-radius: 12px;
+}
+
+/* end cure */
+/* start sitter */
+section.sitter{
+    background-image: url("../asset/image/sitter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+section.sitter .container{
+    background-color: white;
+    width: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    align-items: center;
+    opacity: 0.9;
+}
+
+/* end sitter */
+@media screen and (max-width: 832px) and (min-width: 0px) {
+    section.cure .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
