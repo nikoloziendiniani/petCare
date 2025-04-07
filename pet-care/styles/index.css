@@ -43,7 +43,6 @@ section.health .container {
     border-radius: 20px;
     align-items: center;
     animation: normal 3s gachena ease-in-out;
-    opacity: 0.8;
 }
 
 @keyframes gachena {
