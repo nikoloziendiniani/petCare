@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --mineText: "Roboto";
+    --mainBg: #46da5c;
+    --secBG: #106600;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*  sign-in */
+section.sign-in {
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+}
+
+section.sign-in .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+    background-color: var(--mainBg);
+    padding: 50px 80px;
+    border-radius: 40px;
+}
+
+section.sign-in .title {
+    font-size: 1.4rem;
+    font-family: var(--mineText);
+    font-weight: 600;
+}
+
+section.sign-in .text {
+    color: #201e1e;
+}
+
+section.sign-in form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 100%;
+}
+
+section.sign-in form label {
+    color: black;
+    font-family: var(--mineText);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+section.sign-in form input {
+    background-color: white;
+    border: 1px solid #696969;
+    padding: 10px 16px;
+    margin: 2px 0;
+    font-family: var(--mineText);
+    font-size: 1rem;
+}
+
+section.sign-in form input:hover {
+    border: 1px solid #000;
+    /* border-color: black; */
+}
+
+section.sign-in form input:focus {
+    border: 3px solid #000;
+    margin: 0;
+}
+
+section.sign-in form button {
+    background-color: var(--secBG);
+    padding: 10px 30px;
+    font-family: var(--mineText);
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+section.sign-in form button:hover {
+    background-color: black;
+    color: var(--mainBg);
+}
+
+section.sign-in form .link a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+section.sign-in form .link a:hover {
+    color: #2c62c7;
+    text-decoration: underline;
+}
+
+/*  sign-in */

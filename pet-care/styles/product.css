@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --mineText: "Roboto";
+  --mainBg: #46da5c;
+  --secBG: #106600;
+}
+
+/* products */
+section.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  gap: 15px;
+}
+
+section.products .texts {
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+  width: 100%;
+  align-items: center;
+}
+
+section.products .texts .title,
+section.items .title {
+  font-size: 1.5rem;
+  font-family: var(--mineText);
+  font-weight: 600;
+  text-align: center;
+}
+
+section.products .texts .text>a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+section.products .texts .text>a:hover {
+  text-decoration: none;
+  color: #0071dc;
+}
+
+section.products .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+section.products .container .product {
+  width: 220px;
+  /* width: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 15px;
+  background-color: var(--mainBg);
+  padding: 40px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+section.products .container .product:hover{
+  transform: translateY(-3px);
+  box-shadow: 3px 1px 30px rgba(0, 0, 0, 0.5);
+}
+
+section.products .container .product .rounded-img img {
+  border-radius: 50%;
+}
+
+section.products .container .product img {
+  width: 100%;
+}
+
+section.products .container .product .under-title {
+  font-family: var(--mineText);
+  text-align: center;
+}
+
+/* section.products .container .product .price{
+    font-size: 2rem;
+    font-family: var(--mineText);
+    font-weight: 700;
+  }
+  section.products .container .product .btn{
+    padding: 5px 20px;
+    background-color: var(--secBG);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  section.products .container .product .btn:hover{
+    background-color: black;
+    color: var(--mainBg);
+  } */
+/* products */
+/* sign */
+section.sign {
+  padding: 0px 70px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+section.sign div img {
+  width: 80px;
+  height: 80px;
+}
+
+section.sign .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section.sign .texts .text {
+  color: #2c2c2c;
+  font-family: var(--mineText);
+}
+
+section.sign .texts .btn {
+  background-color: var(--bgColor);
+  border-radius: 30px;
+  padding: 8px 30px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 560;
+  font-family: var(--mineText);
+  text-align: center;
+  width: fit-content;
+}
+
+/* items */
+section.items {
+  padding: 30px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.carousel{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-images{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  height: fit-content;
+}
+
+.carousel-images .card{
+  width: 33%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.carousel-images .card .image{
+  width: 100%;
+  height: 200px;
+  background-image: url(https://placehold.co/300x100);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-images .card .image img{
+  width: 100%;
+  height: 100%;
+}
+.carousel-images .card .price{
+  font-family: var(--mineText);
+  font-weight: 500;
+  font-size: 2.05rem;
+}
+.carousel-images .card .btn{
+  padding: 8px 20px;
+  border-radius: 30px;
+  background-color: var(--secBG);
+  width: fit-content;
+  font-size: 1.1rem;
+  font-family: var(--mineText);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.carousel-images .card .btn:hover{
+  background-color: black;
+  color: var(--mainBg);
+}
+.carousel-images .card .btn::before{
+  content: "+";
+  margin-right: 2px;
+}
+.carousel-btn{
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.carousel-btn:hover{
+  background-color: var(--secBG);
+}
+
+.prev{
+  left: 20px;
+}
+
+.next{
+  right: 20px;
+}
+/* sign */
